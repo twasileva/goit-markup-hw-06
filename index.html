@@ -416,8 +416,8 @@
         <div class="modal">
             <form class="form-modal">
                 <h3 class="form-heading">Оставьте свои данные, мы вам перезвоним</h3>
-                <div class="form-field">
-                    <label for="username">Имя</label>
+                <div class="form-group">
+                    <label for="username" class="form-modal contacts">Имя</label>
                         <div class="modal-icon">
                             <input type="text" class="modal-input" name="username" id="username" placeholder=" ">
                             <svg class="form-icon" width="12" height="12">
@@ -426,8 +426,8 @@
                         </div>                   
                 </div>
 
-                <div class="form-field">
-                    <label for="">Телефон</label>
+                <div class="form-group">
+                    <label for="" class="form-modal contacts">Телефон</label>
                     <div class="modal-icon">
                         <input type="tel" class="modal-input" name="tel" placeholder=" ">
                         <svg class="form-icon" width="13" height="13">
@@ -436,8 +436,8 @@
                     </div>
                 </div>
                 
-                <div class="form-field">
-                    <label for="">Почта</label>
+                <div class="form-group">
+                    <label for="" class="form-modal contacts">Почта</label>
                     <div class="modal-icon">
                         <input type="email" class="modal-input" name="email" placeholder=" ">
                         <svg class="form-icon" width="15" height="12">
@@ -446,19 +446,19 @@
                     </div>
                 </div>
                 
-                <div class="form-field">
-                    <label for="">Комментарий</label>
-                        <textarea name="comment" class="modal-input textarea" rows="6" placeholder="Введите текст"></textarea>
+                <div class="form-group commentary">
+                    <label for="comment" class="form-modal contacts">Комментарий</label>
+                        <textarea name="comment" class="modal-input-textarea" rows="6" id="comment" placeholder="Введите текст"></textarea>
                 </div>
                 
-                <label for="">
-                    <input type="checkbox" name="checkbox" value="agree">
-                    <svg width="16" height="15">
-                        <use href="./images/icons.svg#icon-checkbox"></use>
+                <label class="checkbox-field">
+                    <input type="checkbox" class="checkbox" name="checkbox" value="agree">
+                    <svg class="check-icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-check"></use>
                     </svg>
-                    Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> 
+                    <p class="checkbox-agree">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-terms">Условия договора</a></p>  
                 </label>
-                <button type="submit" class="btn-subscribe">Отправить
+                <button type="submit" class="btn-checkbox">Отправить
                 </button>
             </form>
             <button class="modal-close" data-modal-close>
