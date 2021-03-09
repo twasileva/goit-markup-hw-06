@@ -439,7 +439,7 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   cursor: pointer;
 
   transition: color var(--transition-duration) var(--transition-timing-function);
