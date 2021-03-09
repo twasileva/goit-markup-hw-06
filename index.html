@@ -45,7 +45,7 @@
         <section class="hero">
             <div class="page-hero">
                     <h1 class="hero-heading">Эффективные решения для вашего бизнеса</h1>
-                    <a href="#" class="hero-button" data-modal-open>Заказать услугу</a>
+                    <a href="#" class="btn-button" data-modal-open>Заказать услугу</a>
             </div>
         </section>
         <section class="features">
@@ -397,13 +397,70 @@
                         </li>
                     </ul>
                 </div>
+                <div role="group" class="group">
+                    <form class="form-subscribe">
+                        <div class="form-field">
+                            <label for="subscribe" class="add-text">Подпишитесь на рассылку</label>
+                            <input type="text" class="form-input" name="subscribe" id="subscribe" placeholder="E-mail">
+                        </div>
+                        <button type="submit" class="btn-subscribe">Подписаться
+                            <svg class="icon-subscribe" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>           
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente illum cumque repellat voluptatem laborum, temporibus similique accusamus, in maxime tempore a quae unde provident officia eos aperiam corporis numquam! Saepe in aut, accusantium blanditiis quasi, obcaecati repudiandae placeat voluptatem nihil voluptas nobis assumenda harum, porro quia. Officiis error quam amet, nam molestiae quidem aut aspernatur suscipit vel dolore, quis minus repellat quisquam neque recusandae repudiandae maiores ad ea ab laborum excepturi, impedit ipsum sunt. Quis modi quas, esse blanditiis minima voluptas id ipsum ducimus quae rem numquam ex enim cupiditate animi illo quod magni odio culpa voluptate, dolorum ea.
-            </p>
+            <form class="form-modal">
+                <h3 class="form-heading">Оставьте свои данные, мы вам перезвоним</h3>
+                <div class="form-field">
+                    <label for="username">Имя</label>
+                        <div class="modal-icon">
+                            <input type="text" class="modal-input" name="username" id="username" placeholder=" ">
+                            <svg class="form-icon" width="12" height="12">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>                   
+                </div>
+
+                <div class="form-field">
+                    <label for="">Телефон</label>
+                    <div class="modal-icon">
+                        <input type="tel" class="modal-input" name="tel" placeholder=" ">
+                        <svg class="form-icon" width="13" height="13">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="form-field">
+                    <label for="">Почта</label>
+                    <div class="modal-icon">
+                        <input type="email" class="modal-input" name="email" placeholder=" ">
+                        <svg class="form-icon" width="15" height="12">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="form-field">
+                    <label for="">Комментарий</label>
+                        <textarea name="comment" class="modal-input textarea" rows="6" placeholder="Введите текст"></textarea>
+                </div>
+                
+                <label for="">
+                    <input type="checkbox" name="checkbox" value="agree">
+                    <svg width="16" height="15">
+                        <use href="./images/icons.svg#icon-checkbox"></use>
+                    </svg>
+                    Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a> 
+                </label>
+                <button type="submit" class="btn-subscribe">Отправить
+                </button>
+            </form>
             <button class="modal-close" data-modal-close>
                 <svg width="11" height="11">
                     <use href="./images/sprite.svg#modal-close"></use>
